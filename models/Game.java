@@ -14,6 +14,7 @@ public class Game extends Good{
 		this.maxCountOfPlayers = maxCountOfPlayers;
 		this.aboutGame = aboutGame;
 		this.publisher = publisher;
+		this.typeName = "Game";
 	}
 	public int getSinceAge() {
 		return sinceAge;
