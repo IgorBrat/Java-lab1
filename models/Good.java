@@ -7,6 +7,7 @@ public abstract class Good {
 	protected boolean isDiscounted;
 	protected long id;
 	protected String origin;
+	protected String typeName;
 	protected Good(String name, float priceInUAH, Gender forGender, boolean isDiscounted, long id, String origin) {
 		this.name = name;
 		this.priceInUAH = priceInUAH;
@@ -51,5 +52,15 @@ public abstract class Good {
 	public void setOrigin(String origin) {
 		this.origin = origin;
 	}
+	public String getTypeName() {
+		return typeName;
+	}
+	protected void setTypeName(String typeName) {
+		this.typeName = typeName;
+	}
 	
+	@Override
+	public String toString() {
+		return "Object: " + this.name + ", for " + this.priceInUAH + "UAH, gender: " + this.forGender + ", origin: " + this.origin + "." + System.lineSeparator();
+	}
 }

@@ -10,6 +10,7 @@ public class Toy extends Good{
 		this.weightInKg = weight;
 		this.material = material;
 		this.creature = creature;
+		this.typeName = "Toy";
 	}
 	public float getWeightInKg() {
 		return weightInKg;

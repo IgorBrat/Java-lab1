@@ -12,6 +12,7 @@ public class Bag extends Good{
 		this.capacityInLitres = capacityInLitres;
 		this.weightInKg = weightInKg;
 		this.brand = brand;
+		this.typeName = "Bag";
 	}
 	public String getPattern() {
 		return pattern;
